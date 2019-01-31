@@ -356,7 +356,7 @@ class Position(Instrument):
         return (
             state.get("latitude", "?"),
             state.get("longitude", "?"),
-            state.get("timestamp", None),
+            state.get("timestamp", None).isoformat(),
             state.get("speed", None),
             state.get("heading", None),
         )
